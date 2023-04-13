@@ -1,0 +1,77 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background: url(bg-sehat.jpg);
+    background-size:cover;
+    /* background-repeat: no-repeat; */
+}
+
+/* semua kotak besar - kontainer */
+.container {
+    position: relative;
+    display:flex;
+    justify-content: center;
+    align-content: center;
+    outline: dashed 1px black;   
+}
+
+/* kotak nya */
+.square {
+    outline-color: black;
+    outline-style: double;
+    box-shadow: 5px 13px 5px 0px rgba(0,0,0,0.75);
+    position: absolute;
+    /* width: 500px;
+    height: 500px; */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    background-color: #9ffffd;
+    border-radius: 10px;
+    text-align: center;
+}
+
+h1 {
+    padding: 10px;
+    font-size: 30px;
+    font-style: oblique;
+    font-family:sans-serif;
+}
+
+/* kotak bagian input data */
+.fill {
+    outline-color: black;
+    outline-style:dashed;
+    padding: 15px;
+}
+
+.input {
+    background-color: #fff;
+    box-shadow: 5px 13px 5px 0px rgba(0,0,0,0.75);
+    border-radius: 10px;
+    /* padding: 20px 0; */
+    margin-bottom: 20px;
+}
+
+.input label {
+    display: block;
+}
+
+/* kotak hasil di bawah */
+.hasil {
+    padding: 25px;
+}
+
+#hsl-angka {
+    padding: 10px;
+}
+
+p {
+    padding: 10px;
+}
+

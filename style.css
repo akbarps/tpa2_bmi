@@ -1,0 +1,127 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* atur background */
+body {
+    min-height: 100vh;
+    background: url(bg-sehat.jpg);
+    background-size: cover;
+    font-family: sans-serif;
+    text-align: center;
+    z-index: -3;
+}
+
+/* atur container - batas nya tdk terlihat */
+.container {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* atur kotak keseluruhan */
+.square {
+    min-width: 400px;
+    background-color: #ececec;
+    border-radius: 20px;
+    text-align: center;
+    position: relative;
+}
+
+.square::before {
+    content: '';
+    position: absolute;
+    height: 110%;
+    width: 110%;
+    left: -5%;
+    top:-5%;
+    background-color: rgba(255, 255, 255, 0.3);
+    box-shadow: 5px 8px 5px 0px rgba(0, 0, 0, 0.4);
+    border-bottom: 60px;
+    border-radius: 10px;
+    z-index: -1;
+}
+
+h1 {
+    font-size: 36px;
+    font-weight: bold;
+    padding: 30px 0;
+    font-family: sans-serif;
+    font-style: oblique;
+}
+
+/* atur area luar kotak inputan */
+.fill {
+    padding: 0px 40px;
+}
+
+/* atur kotak inputan */
+.input {
+    background-color: #fff;
+    box-shadow: 5px 8px 5px 0px rgba(0, 0, 0, 0.75);
+    border-radius: 10px;
+    padding: 20px 0;
+    margin-bottom: 20px;
+}
+
+.input label {
+    display: block;
+    font: 15px;
+    font-weight: 600;
+    color: black;
+    margin-bottom: 20px;
+}
+
+.input input {
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #000000;
+    width: 50%;
+    text-align: center;
+    font-size: 24px;
+}
+
+button#btn-hitung {
+    color: #fff;
+    background-color: #b15efb;
+    font-size: 15px;
+    border-radius: 10px;
+    padding: 12px 0;
+    width: 100%;
+    border: none;
+    
+}
+
+button#btn-hitung:hover {
+    background-color: #b82ad8;
+}
+
+/* atur area hasil */
+.hasil {
+    padding: 20px;
+}
+
+.hasil #hsl-angka {
+    display: inline-block;
+    padding: 20px;
+    margin: 10px 0;
+    font-size: 24px;
+    color: #000000;
+    font-weight: 800;
+    background-color: #ffffff;
+    border-radius: 60px;
+}
+
+.hasil p{
+    font-size: 20px;
+    font-weight: 400;
+    /* margin: 5px 0; */
+}
+
+#komen {
+    font-style: italic;
+    font-weight: bold;
+}
